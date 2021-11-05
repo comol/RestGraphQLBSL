@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="009f8ba0-0911-449f-8eb3-e7816ce9022b">
+  <name>goods</name>
+  <synonym>
+    <key>ru</key>
+    <value>Goods</value>
+  </synonym>
+  <rootURL>goods</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="691cf268-14d3-4118-9df3-6a1390e0aac0">
+    <name>testservice</name>
+    <synonym>
+      <key>ru</key>
+      <value>Testservice</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="4978231f-5a02-4830-a71b-dbb5a365a039">
+      <name>nom</name>
+      <synonym>
+        <key>ru</key>
+        <value>Nom</value>
+      </synonym>
+      <handler>testservicenom</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

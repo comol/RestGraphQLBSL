@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cb520b3-b33f-4fd2-ba07-af5463f89e21">
+  <producedTypes>
+    <objectType typeId="cf7b5b0e-4bf1-44b7-b865-5f65b1c8e7c0" valueTypeId="d7e6e31c-fb90-4a96-b13c-c159a190f72a"/>
+    <refType typeId="c6010592-68d1-40d5-a8df-4a9df7cc72b7" valueTypeId="f1b6c4f2-1f45-4cec-b9d7-c4013a6eb9fe"/>
+    <selectionType typeId="5402dd4b-bd81-44e1-9493-203b3b032898" valueTypeId="77a184b0-4162-400a-ae71-1a5bdf8206f4"/>
+    <listType typeId="e1d85fd9-22cf-4f26-817b-1a64a631ea97" valueTypeId="a99de39d-c3b9-495b-9301-82d90bfa9893"/>
+    <managerType typeId="c371d951-c4d8-4606-a078-2108ab668a30" valueTypeId="6a5f8e46-3df1-4445-950a-deb9d6b77ef4"/>
+  </producedTypes>
+  <name>Накладная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Накладная</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Накладная.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ТоварНаСкладе</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="3094109a-51b3-4176-9a6b-c872347bdb79">
+    <producedTypes>
+      <objectType typeId="8137b6fa-a7f0-49c0-a81b-3747c6ddf87e" valueTypeId="8f84aae4-c79e-46d1-8e7a-16f961b26998"/>
+      <rowType typeId="a5669c48-0f50-48be-9cc4-4b87b135d95b" valueTypeId="59da1652-5485-4867-ae6c-fca88825656c"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="f1e5853c-7f71-4784-818f-1b20c86fb7a4">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
